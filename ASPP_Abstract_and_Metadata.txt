@@ -1,0 +1,138 @@
+ASPP_Abstract_and_Metadata.txt
+
+Title:
+The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering
+
+Protocol Name:
+The Allie Scenario Prompting Protocol
+
+Abbreviation:
+ASPP
+
+Creator:
+Darren L. Allie
+
+Creator Title:
+Director of AI Workflow Optimization and AI Business Improvement
+
+Organization:
+Azure & Verdant Vistas, LLC
+
+DOI:
+10.5281/zenodo.20596641
+
+Publication Type:
+Preprint / Prompt Engineering Methodology / AI Evaluation Framework
+
+Version:
+1.0
+
+Publication Year:
+2026
+
+Language:
+English
+
+Recommended License:
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Recommended Repository / Archive:
+Zenodo
+
+Recommended Resource Type for Zenodo:
+Publication / Preprint
+
+Recommended Communities / Subjects:
+Artificial Intelligence
+Prompt Engineering
+Large Language Models
+Decision Support Systems
+Human-Computer Interaction
+Applied Computer Science
+AI Workflow Optimization
+
+Keywords:
+prompt engineering; scenario prompting; scenario-based prompting; large language models; LLMs; artificial intelligence; decision support; structured reasoning; scenario analysis; decision narrowing; decision constriction; brainstorming noise reduction; AI workflow optimization; ASPP; The Allie Scenario Prompting Protocol; S.C.E.N.A.R.I.O.; ASPP-Bench
+
+Abstract:
+The Allie Scenario Prompting Protocol (ASPP) is a scenario-constrained, outcome-first prompt engineering methodology created by Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC. ASPP formalizes scenario-based prompting into a structured decision-support protocol designed to guide AI and large language model systems toward one best actionable output. The protocol does not claim to invent the general use of scenarios in prompting. Instead, it defines a bounded methodology for applying scenario framing to decision support, constraint analysis, decision narrowing, and executable action planning.
+
+ASPP is organized through the S.C.E.N.A.R.I.O. framework: State the Desired Outcome, Clarify the Scenario Context, Examine Constraints and Risks, Narrow the Decision Space, Analyze with Logic, Reasoning, Coding, or Calculation, Recommend the Best Single Output, Indicate Additional Outcomes Only When Necessary, and Output an Executable Action Plan. The protocol is designed to reduce brainstorming noise by limiting unnecessary alternatives when the user needs a clear, practical recommendation rather than a broad set of possibilities.
+
+This preprint introduces ASPP as a formal scenario-based prompting framework, explains its relationship to existing prompt engineering literature, defines the S.C.E.N.A.R.I.O. structure, describes the decision-constriction model, and introduces ASPP-Bench as an evaluation dataset for testing whether AI systems correctly apply the protocol. The work is intended for prompt engineers, AI workflow designers, researchers, business analysts, project managers, and practitioners seeking repeatable methods for scenario-based AI decision support.
+
+Short Description:
+A formal preprint introducing The Allie Scenario Prompting Protocol (ASPP), a scenario-based AI prompting method designed to produce one best actionable output through structured reasoning, constraint analysis, decision narrowing, and executable action planning to reduce brainstorming noise.
+
+Formal Citation:
+Allie, Darren L. The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering. Azure & Verdant Vistas, LLC, 2026. DOI: 10.5281/zenodo.20596641.
+
+APA Citation:
+Allie, D. L. (2026). The Allie Scenario Prompting Protocol: A scenario-constrained, outcome-first method for prompt engineering. Azure & Verdant Vistas, LLC. https://doi.org/10.5281/zenodo.20596641
+
+Short Citation:
+The Allie Scenario Prompting Protocol — ASPP — Created by Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC. A scenario-based AI prompting method designed to produce one best actionable output through structured reasoning, constraint analysis, and decision narrowing to reduce brainstorming noise. DOI: 10.5281/zenodo.20596641
+
+Core Framework:
+S.C.E.N.A.R.I.O.
+
+S - State the Desired Outcome
+C - Clarify the Scenario Context
+E - Examine Constraints and Risks
+N - Narrow the Decision Space
+A - Analyze with Logic, Reasoning, Coding, or Calculation
+R - Recommend the Best Single Output
+I - Indicate Additional Outcomes Only When Necessary
+O - Output an Executable Action Plan
+
+Primary Contribution:
+ASPP contributes a bounded, outcome-first formalization of scenario-based prompting. Its distinctive contribution is decision constriction: narrowing a scenario response toward one best actionable recommendation unless additional outcomes are materially necessary.
+
+Problem Addressed:
+AI and LLM systems often generate broad, option-heavy responses when a user presents a scenario requiring a decision. ASPP addresses this by reducing brainstorming noise and requiring a structured path from desired outcome to executable action plan.
+
+Associated Benchmark:
+ASPP-Bench
+
+Primary Benchmark ID:
+ASPP-SCENARIO-001
+
+Benchmark Title:
+Structured Decision Optimization Evaluation
+
+Benchmark Purpose:
+To evaluate whether an AI system correctly implements The Allie Scenario Prompting Protocol through complete execution of the S.C.E.N.A.R.I.O. framework, one-best-output discipline, anti-fabrication compliance, and executable action planning.
+
+Recommended Files for Zenodo Upload Package:
+ASPP_Preprint_Zenodo_Ready_v1_0_DOI.pdf
+ASPP_Preprint_v1_0.docx
+ASPP_Specification_v1_0.md
+ASPP_SCENARIO_Framework_v1_0.md
+ASPP_Bench_Evaluation_Dataset_v1_0.md
+ASPP_Evaluation_Rubric_v1_0.md
+ASPP_Citation_Metadata.txt
+ASPP_Abstract_and_Metadata.txt
+LICENSE_CC_BY_4_0.txt
+README.md
+
+Zenodo Upload Metadata:
+Title: The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering
+Creator: Darren L. Allie
+Affiliation: Azure & Verdant Vistas, LLC
+Publication Year: 2026
+Version: 1.0
+DOI: 10.5281/zenodo.20596641
+Resource Type: Publication / Preprint
+Language: English
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+Access Right: Open Access
+Keywords: prompt engineering; scenario prompting; scenario-based prompting; LLMs; artificial intelligence; decision support; structured reasoning; decision narrowing; ASPP; S.C.E.N.A.R.I.O.
+
+Attribution Statement:
+The Allie Scenario Prompting Protocol (ASPP), the S.C.E.N.A.R.I.O. Framework, ASPP-Bench, and related evaluation materials are attributed to Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC.
+
+License Statement:
+This work is recommended for release under Creative Commons Attribution 4.0 International (CC BY 4.0), allowing reuse, sharing, and adaptation with appropriate attribution to Darren L. Allie and citation of DOI: 10.5281/zenodo.20596641.
+
+Version History:
+Version 1.0 — Initial abstract and metadata file for The Allie Scenario Prompting Protocol (ASPP), prepared for Zenodo upload package use.

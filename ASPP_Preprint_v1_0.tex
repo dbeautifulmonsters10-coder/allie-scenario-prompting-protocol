@@ -1,0 +1,382 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+\geometry{margin=1in}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+    pdftitle={The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering},
+    pdfauthor={Darren L. Allie},
+    pdfsubject={Prompt Engineering, Scenario Prompting, Large Language Models},
+    pdfkeywords={ASPP, prompt engineering, scenario prompting, LLMs, decision support}
+}
+
+\title{\textbf{The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering}}
+\author{
+Darren L. Allie\\
+Director of AI Workflow Optimization and AI Business Improvement\\
+Azure \& Verdant Vistas, LLC\\
+DOI: \href{https://doi.org/10.5281/zenodo.20596641}{10.5281/zenodo.20596641}
+}
+\date{2026\\Preprint Version 1.0}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Prompt engineering has become a central practice for improving the usefulness, reliability, and task alignment of large language model outputs. Existing prompting methods have advanced model reasoning, planning, role alignment, tool use, output structuring, and multi-path problem solving. However, many scenario-based user prompts still produce outputs that are too broad, too exploratory, or too option-heavy when the user's actual need is a clear and actionable decision. This paper introduces \textit{The Allie Scenario Prompting Protocol} (ASPP), a scenario-constrained, outcome-first prompting methodology created by Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure \& Verdant Vistas, LLC. ASPP does not claim to invent the general phrase ``scenario prompting'' or the broad practice of using scenarios in prompts. Instead, it formalizes a distinct approach to scenario-based prompting that emphasizes desired-outcome identification, context clarification, constraint and risk analysis, decision-space narrowing, logical reasoning, optional coding or calculation, single-best-output recommendation, conditional alternative disclosure, and executable action planning. The protocol is organized through the acronym S.C.E.N.A.R.I.O.: State the Desired Outcome, Clarify the Scenario Context, Examine Constraints and Risks, Narrow the Decision Space, Analyze with Logic, Reasoning, Coding, or Calculation, Recommend the Best Single Output, Indicate Additional Outcomes Only When Necessary, and Output an Executable Action Plan. ASPP's central contribution is decision constriction: reducing unnecessary brainstorming noise in situations where the user needs one best actionable recommendation rather than many possible options. This manuscript defines ASPP, positions it in relation to existing prompt-engineering literature, proposes an evaluation framework, and introduces ASPP-Bench as a benchmark-style evaluation dataset for testing implementation fidelity.
+\end{abstract}
+
+\noindent\textbf{Keywords:} prompt engineering; scenario prompting; scenario-based prompting; large language models; LLMs; AI workflow optimization; decision support; structured reasoning; decision narrowing; ASPP; S.C.E.N.A.R.I.O.
+
+\section{Introduction}
+
+Large language models are increasingly used for professional decision support, business analysis, project planning, operational troubleshooting, financial reasoning, technical drafting, and workflow design. In these contexts, users often provide scenario-type prompts: descriptions of real-world situations involving stakeholders, constraints, urgency, risk, and desired outcomes. These prompts commonly ask the model what should be done, what the best course of action is, how to respond to a problem, or how to choose among competing options.
+
+Although modern language models can generate rich and detailed responses, the breadth of those responses can become a liability. A user who asks for a decision may receive a long list of possible actions, broad brainstorming, or alternatives that are not clearly ranked. This can increase cognitive load, delay execution, and create what this paper calls \textit{brainstorming noise}: output volume that appears helpful but does not efficiently direct the user toward a best actionable path.
+
+The Allie Scenario Prompting Protocol (ASPP) is introduced to address this issue. ASPP is designed for scenario prompts where the user needs a practical recommendation, not merely more possibilities. It formalizes a scenario-based prompting method that constrains the AI system to identify the desired outcome, clarify the situation, examine constraints and risks, narrow the decision space, analyze the best path, and produce one strongest actionable output unless alternatives are materially necessary.
+
+ASPP should be understood as a bounded contribution to prompt engineering. It does not claim that the phrase ``scenario prompting'' is new, nor does it claim that scenario-based prompting has never been used. The broader practice of placing an AI system inside a scenario, role, hypothetical situation, or contextual frame is already present in both practitioner and research settings. ASPP's contribution is more specific: it formalizes scenario-based prompting into an outcome-first decision protocol centered on one-best-output discipline and reduction of brainstorming noise.
+
+\section{Background and Related Work}
+
+Prompt engineering refers to the design and refinement of inputs to guide generative AI systems toward desired outputs. The field has developed rapidly, producing methods aimed at improving reasoning, planning, interpretability, structure, and model performance.
+
+\subsection{Chain-of-Thought Prompting}
+
+Chain-of-Thought prompting improves complex reasoning by encouraging or demonstrating intermediate reasoning steps before the final answer. This method is particularly associated with arithmetic, commonsense, and symbolic reasoning tasks. ASPP differs in its primary goal. Chain-of-Thought emphasizes improved reasoning through intermediate steps. ASPP may use reasoning when needed, but its primary objective is to convert a scenario into one best actionable output.
+
+\subsection{Plan-and-Solve Prompting}
+
+Plan-and-Solve prompting addresses reasoning failures by first generating a plan and then executing subtasks according to that plan. ASPP can incorporate planning as part of its analysis stage, but ASPP is broader in its applied decision-support orientation. It is intended for real-world scenario analysis involving financial, operational, managerial, personal, or strategic choices.
+
+\subsection{ReAct Prompting}
+
+ReAct combines reasoning and acting by allowing language models to generate reasoning traces and task-specific actions in an interleaved manner. ASPP may incorporate action and tool use when needed, especially when calculation, coding, or information retrieval is required. However, ASPP focuses on constraining the final response toward one best recommendation rather than generating an extended reasoning-action trace.
+
+\subsection{Tree of Thoughts}
+
+Tree of Thoughts extends reasoning by allowing a model to explore multiple possible reasoning paths and self-evaluate choices before selecting a final solution. ASPP moves in the opposite direction at the final-output level. While internal exploration may sometimes be useful, ASPP restricts the final user-facing output to the strongest actionable recommendation unless multiple outcomes are materially probable or necessary to disclose.
+
+\subsection{Prompt Pattern Catalogs and Structured Prompting}
+
+Prompt-pattern catalogs document reusable prompt structures that solve common interaction problems with language models. ASPP builds on this broader pattern-based approach by proposing a reusable structure specifically for scenario-based decision support. Its distinct focus is not only better structure, but also reduction of unnecessary alternatives.
+
+\section{Problem Statement: Brainstorming Noise in Scenario-Based Prompting}
+
+Scenario prompts often contain rich context and uncertainty. A user might describe a financial dilemma, a workplace conflict, a project delay, a staffing shortage, a credit decision, a contract risk, or a business expansion opportunity. In response, an AI system may generate many possible actions. While this can be useful in an ideation context, it may be counterproductive when the user is asking for a decision.
+
+This paper defines \textit{brainstorming noise} as AI-generated output that increases the number of apparent choices without sufficiently ranking, eliminating, or constraining them. Brainstorming noise may include:
+
+\begin{itemize}[leftmargin=*]
+    \item Too many options.
+    \item Unranked recommendations.
+    \item Redundant suggestions.
+    \item Generic advice.
+    \item Overuse of contingencies.
+    \item Equal treatment of weak and strong options.
+    \item Failure to recommend a clear next action.
+    \item Excessive alternatives when one recommendation is dominant.
+    \item Output that informs but does not guide execution.
+\end{itemize}
+
+ASPP addresses brainstorming noise by establishing a protocol in which the AI system must narrow the decision space and recommend the best single output by default.
+
+\section{Formal Definition of ASPP}
+
+\textbf{The Allie Scenario Prompting Protocol (ASPP)} is a scenario-based prompt-engineering protocol that formalizes how AI systems should interpret, analyze, and respond to real-world or hypothetical scenarios by identifying the desired outcome, clarifying context, examining constraints and risks, narrowing the decision space, applying reasoning or calculation where needed, and producing one best actionable output to reduce brainstorming noise.
+
+ASPP is designed to support decision clarity in scenario-based prompts. It is especially useful when the user needs a recommendation, sequence, decision, plan, or prioritized action rather than a broad list of possibilities.
+
+\section{Formal Attribution}
+
+The Allie Scenario Prompting Protocol (ASPP) is credited to:
+
+\begin{center}
+\textbf{Darren L. Allie}\\
+\textbf{Director of AI Workflow Optimization and AI Business Improvement}\\
+\textbf{Azure \& Verdant Vistas, LLC}
+\end{center}
+
+The protocol is presented as a formalized prompting method for scenario-based decision support and AI workflow optimization.
+
+\section{The S.C.E.N.A.R.I.O. Framework}
+
+ASPP is organized through the acronym S.C.E.N.A.R.I.O. Each letter represents a required operating stage.
+
+\begin{longtable}{p{0.12\textwidth} p{0.32\textwidth} p{0.45\textwidth}}
+\toprule
+\textbf{Stage} & \textbf{Meaning} & \textbf{Function} \\
+\midrule
+S & State the Desired Outcome & Identify the result the user wants to achieve. \\
+C & Clarify the Scenario Context & Define relevant facts, stakeholders, timeline, and assumptions. \\
+E & Examine Constraints and Risks & Identify material limits, risks, obligations, and uncertainty. \\
+N & Narrow the Decision Space & Remove weak, unrealistic, or unnecessary options. \\
+A & Analyze with Logic, Reasoning, Coding, or Calculation & Apply the appropriate analytical method. \\
+R & Recommend the Best Single Output & Provide the strongest actionable recommendation. \\
+I & Indicate Additional Outcomes Only When Necessary & Mention alternatives only when materially justified. \\
+O & Output an Executable Action Plan & Provide practical next steps for implementation. \\
+\bottomrule
+\end{longtable}
+
+\subsection{S --- State the Desired Outcome}
+
+The AI system must identify the result the user wants to achieve. The desired outcome anchors the response and prevents the model from drifting into generic advice.
+
+\subsection{C --- Clarify the Scenario Context}
+
+The AI system must identify the relevant facts, stakeholders, timeline, environment, assumptions, and situational details. Context determines how the scenario should be interpreted.
+
+\subsection{E --- Examine Constraints and Risks}
+
+The AI system must identify the limits and risks affecting the recommendation. These may include money, time, credit, labor, legal exposure, safety, technology, policy, compliance, staffing, or reputational risk.
+
+\subsection{N --- Narrow the Decision Space}
+
+The AI system must eliminate weak, unrealistic, redundant, or low-value options. This is the core decision-constriction stage of ASPP.
+
+\subsection{A --- Analyze with Logic, Reasoning, Coding, or Calculation}
+
+The AI system must apply the appropriate analytical method. Depending on the scenario, this may include logical reasoning, financial calculation, operational modeling, data analysis, coding, risk scoring, or structured comparison.
+
+\subsection{R --- Recommend the Best Single Output}
+
+The AI system must provide one strongest actionable recommendation by default. The recommendation should be clear, direct, defensible, and aligned with the desired outcome.
+
+\subsection{I --- Indicate Additional Outcomes Only When Necessary}
+
+The AI system should mention alternatives only when they are materially probable, materially close, required for safety or compliance, or explicitly requested by the user.
+
+\subsection{O --- Output an Executable Action Plan}
+
+The AI system must end with a practical next-step sequence. The final output should tell the user what to do first, what to avoid, what to verify, and how to proceed.
+
+\section{Decision-Constriction Model}
+
+ASPP's central model is \textit{decision constriction}. Decision constriction means intentionally reducing the final response space from many possible outputs to one best actionable recommendation unless alternatives are necessary.
+
+The decision-constriction process can be represented as:
+
+\begin{quote}
+Scenario Input $\rightarrow$ Desired Outcome $\rightarrow$ Context Clarification $\rightarrow$ Constraint and Risk Analysis $\rightarrow$ Option Elimination $\rightarrow$ Reasoned Evaluation $\rightarrow$ Best Single Recommendation $\rightarrow$ Executable Action Plan
+\end{quote}
+
+This model distinguishes ASPP from exploratory prompting methods. Exploratory prompting seeks breadth. ASPP seeks decision clarity.
+
+\section{Output Rules}
+
+ASPP includes three primary output rules.
+
+\subsection{One-Best-Output Rule}
+
+The AI system should return one best actionable recommendation by default.
+
+\subsection{Conditional Alternative Rule}
+
+The AI system should indicate additional outcomes only when:
+
+\begin{enumerate}[leftmargin=*]
+    \item Two or more options are materially close.
+    \item Missing facts could change the recommendation.
+    \item The scenario involves legal, financial, medical, safety, or compliance uncertainty.
+    \item A contingency must be stated to avoid misleading the user.
+    \item The user explicitly requests alternatives.
+\end{enumerate}
+
+\subsection{Executable Action Rule}
+
+The AI system should convert the recommendation into a practical action plan. The output should not stop at analysis.
+
+\section{Methodology for Applying ASPP}
+
+A standard ASPP prompt should include:
+
+\begin{enumerate}[leftmargin=*]
+    \item The scenario.
+    \item The desired outcome.
+    \item Known facts.
+    \item Constraints.
+    \item Risks.
+    \item Timeline.
+    \item Required decision.
+    \item Whether alternatives are allowed.
+    \item Any data, calculations, or evidence to consider.
+\end{enumerate}
+
+A standard ASPP output should include:
+
+\begin{enumerate}[leftmargin=*]
+    \item Best recommendation.
+    \item Why this is the best option.
+    \item Relevant constraints and risks.
+    \item Essential analysis.
+    \item Executable action plan.
+    \item Alternative note only if necessary.
+\end{enumerate}
+
+\section{ASPP-Bench Evaluation Dataset}
+
+ASPP-Bench is the benchmark-style evaluation dataset for testing whether AI systems correctly implement ASPP.
+
+The primary benchmark is:
+
+\begin{quote}
+\textbf{ASPP-SCENARIO-001: Structured Decision Optimization Evaluation}
+\end{quote}
+
+The benchmark evaluates whether a model can:
+
+\begin{itemize}[leftmargin=*]
+    \item Follow the complete S.C.E.N.A.R.I.O. sequence.
+    \item Produce logical and defensible recommendations.
+    \item Avoid unsupported conclusions.
+    \item Avoid fabricated facts, metrics, market data, financial projections, or assumptions.
+    \item Deliver one best actionable recommendation.
+    \item Output an executable action plan.
+    \item Maintain consistency under uncertainty.
+\end{itemize}
+
+\subsection{Scoring Rubric}
+
+\begin{longtable}{p{0.70\textwidth} r}
+\toprule
+\textbf{Component} & \textbf{Points} \\
+\midrule
+S --- State the Desired Outcome & 10 \\
+C --- Clarify the Scenario Context & 10 \\
+E --- Examine Constraints and Risks & 15 \\
+N --- Narrow the Decision Space & 15 \\
+A --- Analyze with Logic, Reasoning, Coding, or Calculation & 20 \\
+R --- Recommend the Best Single Output & 10 \\
+I --- Indicate Additional Outcomes Only When Necessary & 5 \\
+O --- Output an Executable Action Plan & 15 \\
+\midrule
+\textbf{Total} & \textbf{100} \\
+\bottomrule
+\end{longtable}
+
+\subsection{Performance Levels}
+
+\begin{longtable}{p{0.20\textwidth} p{0.65\textwidth}}
+\toprule
+\textbf{Score} & \textbf{Rating} \\
+\midrule
+90--100 & Exceptional ASPP Compliance \\
+80--89 & Strong ASPP Compliance \\
+70--79 & Moderate ASPP Compliance \\
+60--69 & Weak ASPP Compliance \\
+Below 60 & Non-Compliant \\
+\bottomrule
+\end{longtable}
+
+\section{Applied Example: HELOC and Apartment Credit-Check Scenario}
+
+A user needs to apply for a Home Equity Line of Credit but has a lower-than-desired credit score. The user also needs housing and is considering an apartment complex offering two months of free rent if a lease is signed within four days. However, the apartment application may require a credit check, which could reduce the user's HELOC borrowing power.
+
+Under ASPP, the strongest recommendation is to prioritize protecting the HELOC borrowing capacity first and avoid authorizing an apartment application that creates a hard inquiry unless the apartment complex confirms in writing that the screening is a soft pull or accepts an alternative credit-verification method.
+
+This scenario demonstrates ASPP because it contains competing financial priorities, time pressure, credit risk, and a need for decision sequencing. A generic response might list several options. ASPP instead narrows the decision by ranking the higher-value risk and producing one practical recommendation.
+
+\section{Applied Example: Janitorial Labor Reduction Scenario}
+
+A municipal janitorial operation is required to reduce 200 labor hours per month while maintaining the same scope of work in a six-story facility. The operation must continue cleaning resident rooms, restrooms, showers, lounges, hallways, dining areas, elevators, stairwells, exterior grounds, and high-traffic areas.
+
+Under ASPP, the strongest recommendation is to implement a priority-based labor redesign that protects high-risk, high-visibility, and compliance-critical tasks while consolidating low-frequency, low-risk tasks into scheduled blocks.
+
+This example demonstrates ASPP's usefulness for operational decisions because it avoids broad staffing brainstorming and instead recommends a decision model that preserves compliance while meeting the hour-reduction requirement.
+
+\section{Limitations}
+
+ASPP has several limitations.
+
+First, ASPP depends on the quality of the scenario information provided. If the user omits critical facts, the recommendation may require assumptions.
+
+Second, ASPP's one-best-output rule may be inappropriate when the user's goal is creativity, exploration, research discovery, or brainstorming.
+
+Third, ASPP may require domain-specific caution in legal, medical, financial, safety, or compliance-sensitive contexts.
+
+Fourth, ASPP has not yet been validated through a large-scale benchmark study. This manuscript proposes an evaluation framework, but empirical testing remains future work.
+
+Fifth, decision constriction may be harmful if applied too aggressively in scenarios where uncertainty is high and alternatives are genuinely necessary. The protocol addresses this through conditional alternative disclosure, but further testing is required.
+
+\section{Future Work}
+
+Future work should focus on:
+
+\begin{enumerate}[leftmargin=*]
+    \item Publishing and maintaining the ASPP preprint.
+    \item Expanding ASPP-Bench into a larger scenario dataset.
+    \item Developing a public prompt template library.
+    \item Building and maintaining a GitHub repository.
+    \item Archiving the protocol and dataset with DOI-backed releases.
+    \item Testing ASPP against generic scenario prompts.
+    \item Comparing ASPP with Chain-of-Thought, Plan-and-Solve, ReAct, and Tree of Thoughts in applied decision scenarios.
+    \item Creating platform-specific ASPP templates for major AI and LLM platforms.
+    \item Creating an adoption guide for business and workflow settings.
+    \item Refining ASPP into later versions based on external feedback.
+\end{enumerate}
+
+\section{Conclusion}
+
+The Allie Scenario Prompting Protocol (ASPP) is introduced as a scenario-constrained, outcome-first method for prompt engineering. It formalizes scenario-based prompting into a structured decision-support protocol that clarifies the desired outcome, examines context and constraints, narrows the decision space, applies reasoning or calculation where needed, recommends one best actionable output, discloses alternatives only when necessary, and ends with an executable action plan.
+
+ASPP's central contribution is decision constriction: reducing brainstorming noise when the user needs a clear recommendation rather than a broad set of possibilities. By positioning ASPP carefully within existing prompt-engineering literature and pairing it with benchmark-style evaluation, prompt templates, and community adoption materials, ASPP can be developed into a reusable and testable contribution to scenario-based prompt engineering.
+
+\section*{License}
+
+This work is recommended for release under the Creative Commons Attribution 4.0 International License (CC BY 4.0). Users may share and adapt the work with appropriate attribution to Darren L. Allie and citation of DOI: \href{https://doi.org/10.5281/zenodo.20596641}{10.5281/zenodo.20596641}.
+
+\section*{Suggested Citation}
+
+Allie, Darren L. \textit{The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering}. Azure \& Verdant Vistas, LLC, 2026. DOI: \href{https://doi.org/10.5281/zenodo.20596641}{10.5281/zenodo.20596641}.
+
+\begin{thebibliography}{9}
+
+\bibitem{wei2022cot}
+Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q., and Zhou, D.
+\textit{Chain-of-Thought Prompting Elicits Reasoning in Large Language Models}.
+arXiv preprint, 2022.
+
+\bibitem{wang2023plan}
+Wang, L., Xu, W., Lan, Y., Hu, Z., Lan, Y., Lee, R. K.-W., and Lim, E.-P.
+\textit{Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models}.
+arXiv preprint, 2023.
+
+\bibitem{yao2022react}
+Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., and Cao, Y.
+\textit{ReAct: Synergizing Reasoning and Acting in Language Models}.
+arXiv preprint, 2022.
+
+\bibitem{yao2023tot}
+Yao, S., Yu, D., Zhao, J., Shafran, I., Griffiths, T. L., Cao, Y., and Narasimhan, K.
+\textit{Tree of Thoughts: Deliberate Problem Solving with Large Language Models}.
+arXiv preprint, 2023.
+
+\bibitem{white2023patterns}
+White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar, A., Spencer-Smith, J., and Schmidt, D. C.
+\textit{A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT}.
+arXiv preprint, 2023.
+
+\bibitem{schulhoff2024prompt}
+Schulhoff, S. and collaborators.
+\textit{The Prompt Report: A Systematic Survey of Prompting Techniques}.
+arXiv preprint, 2024.
+
+\end{thebibliography}
+
+\end{document}

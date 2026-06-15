@@ -1,0 +1,61 @@
+LICENSE_CC_BY_4_0.txt
+
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Work:
+The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering
+
+Protocol:
+The Allie Scenario Prompting Protocol (ASPP)
+
+Creator:
+Darren L. Allie
+
+Creator Title:
+Director of AI Workflow Optimization and AI Business Improvement
+
+Organization:
+Azure & Verdant Vistas, LLC
+
+DOI:
+10.5281/zenodo.20596641
+
+License:
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+License URL:
+https://creativecommons.org/licenses/by/4.0/
+
+Recommended Attribution:
+Allie, Darren L. The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering. Azure & Verdant Vistas, LLC, 2026. DOI: 10.5281/zenodo.20596641.
+
+Short Attribution:
+The Allie Scenario Prompting Protocol — ASPP — Created by Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC. DOI: 10.5281/zenodo.20596641.
+
+License Summary:
+This work is licensed under the Creative Commons Attribution 4.0 International License.
+
+Under CC BY 4.0, users may share and adapt the licensed material, including copying, redistributing, remixing, transforming, and building upon the material, provided appropriate credit is given to the creator, a link to the license is provided, and changes are indicated where applicable.
+
+Attribution Requirement:
+Any reuse, distribution, adaptation, or derivative work should include appropriate attribution to:
+
+Darren L. Allie
+Director of AI Workflow Optimization and AI Business Improvement
+Azure & Verdant Vistas, LLC
+
+Attribution should also include the title of the work, the DOI, and a reference to the CC BY 4.0 license.
+
+Suggested Attribution Format:
+“The Allie Scenario Prompting Protocol (ASPP)” by Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC, DOI: 10.5281/zenodo.20596641, is licensed under CC BY 4.0.
+
+No Additional Restrictions:
+Users may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+Notice:
+This file is a project-specific license notice for The Allie Scenario Prompting Protocol (ASPP). The full legal code for the Creative Commons Attribution 4.0 International License is available at:
+
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Disclaimer:
+This license notice is provided for documentation and repository packaging purposes and is not legal advice. For the authoritative license terms, consult the official Creative Commons Attribution 4.0 International legal code.

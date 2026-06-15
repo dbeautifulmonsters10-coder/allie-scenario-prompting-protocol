@@ -1,0 +1,127 @@
+ASPP_Citation_Metadata.txt
+
+Title:
+The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering
+
+Protocol Name:
+The Allie Scenario Prompting Protocol
+
+Abbreviation:
+ASPP
+
+Creator:
+Darren L. Allie
+
+Creator Title:
+Director of AI Workflow Optimization and AI Business Improvement
+
+Organization:
+Azure & Verdant Vistas, LLC
+
+Publication Type:
+Preprint / Methodology / Prompt Engineering Framework
+
+Version:
+1.0
+
+Publication Year:
+2026
+
+DOI:
+10.5281/zenodo.20596641
+
+Recommended Citation:
+Allie, Darren L. (2026). The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering. Azure & Verdant Vistas, LLC. DOI: 10.5281/zenodo.20596641
+
+Short Citation:
+The Allie Scenario Prompting Protocol — ASPP — Created by Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC. A scenario-based AI prompting method designed to produce one best actionable output through structured reasoning, constraint analysis, and decision narrowing to reduce brainstorming noise. DOI: 10.5281/zenodo.20596641
+
+APA Style:
+Allie, D. L. (2026). The Allie Scenario Prompting Protocol: A scenario-constrained, outcome-first method for prompt engineering. Azure & Verdant Vistas, LLC. https://doi.org/10.5281/zenodo.20596641
+
+MLA Style:
+Allie, Darren L. The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering. Azure & Verdant Vistas, LLC, 2026. DOI: 10.5281/zenodo.20596641.
+
+Chicago Style:
+Allie, Darren L. 2026. The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering. Azure & Verdant Vistas, LLC. https://doi.org/10.5281/zenodo.20596641.
+
+BibTeX:
+@misc{allie2026aspp,
+  author       = {Allie, Darren L.},
+  title        = {The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering},
+  year         = {2026},
+  publisher    = {Azure & Verdant Vistas, LLC},
+  doi          = {10.5281/zenodo.20596641},
+  url          = {https://doi.org/10.5281/zenodo.20596641},
+  note         = {Preprint. The Allie Scenario Prompting Protocol (ASPP).}
+}
+
+RIS:
+TY  - GEN
+AU  - Allie, Darren L.
+TI  - The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering
+PY  - 2026
+PB  - Azure & Verdant Vistas, LLC
+DO  - 10.5281/zenodo.20596641
+UR  - https://doi.org/10.5281/zenodo.20596641
+N1  - Preprint. The Allie Scenario Prompting Protocol (ASPP).
+ER  -
+
+CFF Metadata:
+cff-version: 1.2.0
+message: "If you use The Allie Scenario Prompting Protocol (ASPP), please cite it using the metadata below."
+title: "The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering"
+authors:
+  - family-names: "Allie"
+    given-names: "Darren L."
+affiliation: "Azure & Verdant Vistas, LLC"
+version: "1.0"
+date-released: "2026"
+doi: "10.5281/zenodo.20596641"
+url: "https://doi.org/10.5281/zenodo.20596641"
+keywords:
+  - prompt engineering
+  - scenario prompting
+  - scenario-based prompting
+  - large language models
+  - LLMs
+  - artificial intelligence
+  - decision support
+  - structured reasoning
+  - decision narrowing
+  - AI workflow optimization
+  - ASPP
+license: "CC-BY-4.0"
+
+Zenodo Metadata Fields:
+Resource Type: Publication / Preprint
+Title: The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering
+Creator: Darren L. Allie
+Affiliation: Azure & Verdant Vistas, LLC
+Publication Date: 2026
+Version: 1.0
+DOI: 10.5281/zenodo.20596641
+Language: English
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+Keywords: prompt engineering; scenario prompting; scenario-based prompting; large language models; LLMs; artificial intelligence; decision support; structured reasoning; decision narrowing; AI workflow optimization; ASPP
+
+Abstract:
+The Allie Scenario Prompting Protocol (ASPP) is a scenario-constrained, outcome-first prompt engineering methodology created by Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC. ASPP formalizes scenario-based prompting into a structured decision-support protocol that clarifies the desired outcome, examines scenario context, identifies constraints and risks, narrows the decision space, applies logic, reasoning, coding, or calculation where needed, recommends one best actionable output, indicates additional outcomes only when necessary, and outputs an executable action plan. ASPP is designed to reduce brainstorming noise in AI and LLM outputs where the user needs a clear, practical recommendation rather than a broad set of possibilities.
+
+Core Framework:
+S.C.E.N.A.R.I.O.
+
+S - State the Desired Outcome
+C - Clarify the Scenario Context
+E - Examine Constraints and Risks
+N - Narrow the Decision Space
+A - Analyze with Logic, Reasoning, Coding, or Calculation
+R - Recommend the Best Single Output
+I - Indicate Additional Outcomes Only When Necessary
+O - Output an Executable Action Plan
+
+Attribution Statement:
+The Allie Scenario Prompting Protocol (ASPP), the S.C.E.N.A.R.I.O. Framework, ASPP-Bench, and related evaluation materials are attributed to Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC.
+
+License Statement:
+This citation metadata file is recommended for use with Creative Commons Attribution 4.0 International (CC BY 4.0). Users may share and adapt the work with appropriate attribution to Darren L. Allie and reference to DOI: 10.5281/zenodo.20596641.
