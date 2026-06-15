@@ -1,0 +1,100 @@
+cff-version: 1.2.0
+message: "If you use The Allie Scenario Prompting Protocol (ASPP), please cite it using the metadata below."
+title: "The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering"
+type: report
+
+authors:
+  - family-names: "Allie"
+    given-names: "Darren L."
+    affiliation: "Azure & Verdant Vistas, LLC"
+
+abstract: "The Allie Scenario Prompting Protocol (ASPP) is a scenario-constrained, outcome-first prompt engineering methodology created by Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC. ASPP is designed to produce one best actionable output through structured reasoning, constraint analysis, decision narrowing, and executable action planning to reduce brainstorming noise."
+
+version: "1.0"
+date-released: "2026"
+doi: "10.5281/zenodo.20596641"
+url: "https://doi.org/10.5281/zenodo.20596641"
+
+keywords:
+  - prompt engineering
+  - scenario prompting
+  - scenario-based prompting
+  - large language models
+  - LLMs
+  - artificial intelligence
+  - decision support
+  - structured reasoning
+  - decision narrowing
+  - decision constriction
+  - AI workflow optimization
+  - ASPP
+  - S.C.E.N.A.R.I.O.
+
+license: "CC-BY-4.0"
+
+preferred-citation:
+  type: report
+  title: "The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering"
+  authors:
+    - family-names: "Allie"
+      given-names: "Darren L."
+      affiliation: "Azure & Verdant Vistas, LLC"
+  year: 2026
+  doi: "10.5281/zenodo.20596641"
+  url: "https://doi.org/10.5281/zenodo.20596641"
+  institution:
+    name: "Azure & Verdant Vistas, LLC"
+  notes: "Preprint. The Allie Scenario Prompting Protocol (ASPP), credited to Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC."
+
+references:
+  - type: article
+    authors:
+      - family-names: "Wei"
+        given-names: "Jason"
+      - family-names: "Wang"
+        given-names: "Xuezhi"
+      - family-names: "Schuurmans"
+        given-names: "Dale"
+      - family-names: "Zhou"
+        given-names: "Denny"
+    title: "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models"
+    year: 2022
+    doi: "10.48550/arXiv.2201.11903"
+
+  - type: article
+    authors:
+      - family-names: "Yao"
+        given-names: "Shunyu"
+      - family-names: "Zhao"
+        given-names: "Jeffrey"
+      - family-names: "Yu"
+        given-names: "Dian"
+      - family-names: "Cao"
+        given-names: "Yuan"
+    title: "ReAct: Synergizing Reasoning and Acting in Language Models"
+    year: 2022
+    doi: "10.48550/arXiv.2210.03629"
+
+  - type: article
+    authors:
+      - family-names: "Yao"
+        given-names: "Shunyu"
+      - family-names: "Yu"
+        given-names: "Dian"
+      - family-names: "Narasimhan"
+        given-names: "Karthik"
+    title: "Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
+    year: 2023
+    doi: "10.48550/arXiv.2305.10601"
+
+  - type: article
+    authors:
+      - family-names: "White"
+        given-names: "Jules"
+      - family-names: "Fu"
+        given-names: "Quchen"
+      - family-names: "Schmidt"
+        given-names: "Douglas C."
+    title: "A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT"
+    year: 2023
+    doi: "10.48550/arXiv.2302.11382"
