@@ -47,7 +47,7 @@ Azure & Verdant Vistas, LLC
 Attribution should also include the title of the work, the DOI, and a reference to the CC BY 4.0 license.
 
 Suggested Attribution Format:
-“The Allie Scenario Prompting Protocol (ASPP)” by Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC, DOI: 10.5281/zenodo.20596641, is licensed under CC BY 4.0.
+"The Allie Scenario Prompting Protocol (ASPP)" by Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC, DOI: 10.5281/zenodo.20596641, is licensed under CC BY 4.0.
 
 No Additional Restrictions:
 Users may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.

@@ -17,7 +17,7 @@
 
 ASPP formalizes scenario-based prompting into a structured decision-support protocol designed to guide AI and large language model systems toward **one best actionable output** rather than an overextended list of possibilities.
 
-ASPP is designed to reduce **brainstorming noise** by helping AI systems clarify the user’s desired outcome, understand the scenario context, identify constraints and risks, narrow the decision space, apply logic or calculation where useful, recommend one best course of action, disclose alternatives only when necessary, and output an executable action plan.
+ASPP is designed to reduce **brainstorming noise** by helping AI systems clarify the user's desired outcome, understand the scenario context, identify constraints and risks, narrow the decision space, apply logic or calculation where useful, recommend one best course of action, disclose alternatives only when necessary, and output an executable action plan.
 
 ---
 
@@ -194,11 +194,10 @@ Performance levels:
 
 ## Package Contents
 
-This release package may include:
+This release package includes:
 
 ```text
-ASPP_Preprint_Zenodo_Ready_v1_0_DOI.pdf
-ASPP_Preprint_v1_0.docx
+ASPP_Preprint_v1_0.tex
 ASPP_Specification_v1_0.md
 ASPP_SCENARIO_Framework_v1_0.md
 ASPP_Bench_Evaluation_Dataset_v1_0.md
@@ -207,32 +206,7 @@ ASPP_Citation_Metadata.txt
 ASPP_Abstract_and_Metadata.txt
 LICENSE_CC_BY_4_0.txt
 README.md
-```
-
----
-
-## Recommended Repository Structure
-
-```text
-allie-scenario-prompting-protocol/
-│
-├── README.md
-├── LICENSE_CC_BY_4_0.txt
-├── ASPP_Citation_Metadata.txt
-├── ASPP_Abstract_and_Metadata.txt
-├── ASPP_Preprint_v1_0.docx
-├── ASPP_Preprint_Zenodo_Ready_v1_0_DOI.pdf
-│
-├── docs/
-│   ├── ASPP_Specification_v1_0.md
-│   └── ASPP_SCENARIO_Framework_v1_0.md
-│
-├── benchmarks/
-│   ├── ASPP_Bench_Evaluation_Dataset_v1_0.md
-│   └── ASPP_Evaluation_Rubric_v1_0.md
-│
-└── templates/
-    └── ASPP_Template_Library_v1_0.md
+references.bib
 ```
 
 ---
