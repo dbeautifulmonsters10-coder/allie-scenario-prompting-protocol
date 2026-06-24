@@ -197,16 +197,18 @@ Performance levels:
 This release package includes:
 
 ```text
-ASPP_Preprint_v1_0.tex
-ASPP_Specification_v1_0.md
-ASPP_SCENARIO_Framework_v1_0.md
-ASPP_Bench_Evaluation_Dataset_v1_0.md
-ASPP_Evaluation_Rubric_v1_0.md
-ASPP_Citation_Metadata.txt
-ASPP_Abstract_and_Metadata.txt
+release/ASPP_Preprint_v1_0.tex
+release/ASPP_Specification_v1_0.md
+release/ASPP_SCENARIO_Framework_v1_0.md
+release/ASPP_Bench_Evaluation_Dataset_v1_0.md
+release/ASPP_Evaluation_Rubric_v1_0.md
+release/ASPP_Citation_Metadata.txt
+release/ASPP_Abstract_and_Metadata.txt
+release/references.bib
+release/ZENODO_UPLOAD_CHECKLIST.md
+assets/figures.zip
 LICENSE_CC_BY_4_0.txt
 README.md
-references.bib
 ```
 
 ---
