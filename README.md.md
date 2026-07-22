@@ -143,6 +143,9 @@ allie-scenario-prompting-protocol/
 | [`benchmarks/ASPP_Evaluation_Rubric_v1_0.md`](benchmarks/ASPP_Evaluation_Rubric_v1_0.md) | Provides the 100-point ASPP evaluation rubric. |
 | [`docs/ASPP_Standards_Alignment_Document_v1_0.md`](docs/ASPP_Standards_Alignment_Document_v1_0.md) | Maps ASPP to AI governance, risk, and security frameworks. |
 | [`preprint/ASPP_Preprint_Zenodo_Ready_v1_0_DOI.pdf`](preprint/ASPP_Preprint_Zenodo_Ready_v1_0_DOI.pdf) | Formal ASPP preprint manuscript. |
+README.md
+v2
+> **Zenodo filename note (v2 alignment):** The canonical preprint filename in this repository is `ASPP_Preprint_Zenodo_Ready_v1_0_DOI.pdf`. The Zenodo upload name `ASPP_Preprint_Zenodo_Ready_v1_0_DOI (1).pdf` includes a `(1)` duplicate-upload artifact and does **not** indicate a distinct version.
 
 ---
 
