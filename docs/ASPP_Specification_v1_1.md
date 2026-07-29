@@ -2,7 +2,7 @@
 
 ## Core Specification Document
 
-**Version:** 1.0  
+**Version:** 1.1  
 **DOI:** 10.5281/zenodo.20596641  
 **Created by:** Darren L. Allie  
 **Creator Title:** Director of AI Workflow Optimization and AI Business Improvement  
@@ -118,4 +118,5 @@ Allie, Darren L. **The Allie Scenario Prompting Protocol: A Scenario-Constrained
 
 | Version | Date | Description |
 |---|---|---|
+| 1.1 | 2026-07-29 | Public release update: version increment, naming refresh, and clarity improvements. |
 | 1.0 | 2026 | Initial core specification defining ASPP. |

@@ -10,8 +10,8 @@ authors:
 
 abstract: "The Allie Scenario Prompting Protocol (ASPP) is a scenario-constrained, outcome-first prompt engineering methodology created by Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC. ASPP is designed to produce one best actionable output through structured reasoning, constraint analysis, decision narrowing, and executable action planning to reduce brainstorming noise."
 
-version: "1.0"
-date-released: "2026"
+version: "1.1"
+date-released: "2026-07-29"
 doi: "10.5281/zenodo.20596641"
 url: "https://doi.org/10.5281/zenodo.20596641"
 

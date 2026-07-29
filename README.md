@@ -6,7 +6,7 @@
 **Creator Title:** Director of AI Workflow Optimization and AI Business Improvement  
 **Organization:** Azure & Verdant Vistas, LLC  
 **DOI:** 10.5281/zenodo.20596641  
-**Version:** 1.0  
+**Version:** 1.1  
 **Recommended License:** Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 ---
@@ -192,16 +192,28 @@ Performance levels:
 
 ---
 
+
+## Release Notes (v1.1)
+
+- Enhanced protocol specification language for clarity and consistency.
+- Updated SCENARIO framework, template library, and benchmark/rubric files to v1.1 naming and metadata.
+- Renamed preprint manuscript source files to v1.1 (`.tex` and `.docx`) and updated version text.
+- Refreshed repository citation and abstract metadata for the v1.1 public release.
+
+---
+
 ## Package Contents
 
 This release package includes:
 
 ```text
-ASPP_Preprint_v1_0.tex
-ASPP_Specification_v1_0.md
-ASPP_SCENARIO_Framework_v1_0.md
-ASPP_Bench_Evaluation_Dataset_v1_0.md
-ASPP_Evaluation_Rubric_v1_0.md
+ASPP_Preprint_v1_1.tex
+ASPP_Preprint_v1_1.docx
+docs/ASPP_Specification_v1_1.md
+docs/ASPP_SCENARIO_Framework_v1_1.md
+templates/ASPP_Template_Library_v1_1.md
+benchmarks/ASPP_Bench_Evaluation_Dataset_v1_1.md
+benchmarks/ASPP_Evaluation_Rubric_v1_1.md
 ASPP_Citation_Metadata.txt
 ASPP_Abstract_and_Metadata.txt
 LICENSE_CC_BY_4_0.txt
@@ -279,6 +291,7 @@ The Allie Scenario Prompting Protocol (ASPP), the S.C.E.N.A.R.I.O. Framework, AS
 
 | Version | Date | Description |
 |---|---|---|
+| 1.1 | 2026-07-29 | Public release update with v1.1 documentation, benchmark/template refresh, and manuscript filename/version updates. |
 | 1.0 | 2026 | Initial README for The Allie Scenario Prompting Protocol repository and Zenodo package. |
 
 ---

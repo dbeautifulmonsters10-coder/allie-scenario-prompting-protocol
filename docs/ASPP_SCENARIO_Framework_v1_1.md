@@ -1,9 +1,9 @@
 # The Allie Scenario Prompting Protocol — SCENARIO Framework
 
-**File Name:** `ASPP_SCENARIO_Framework_v1_0.md`  
+**File Name:** `ASPP_SCENARIO_Framework_v1_1.md`  
 **Framework:** The Allie Scenario Prompting Protocol (ASPP)  
 **Framework Component:** S.C.E.N.A.R.I.O.  
-**Version:** 1.0  
+**Version:** 1.1  
 **Creator:** Darren L. Allie  
 **Creator Title:** Director of AI Workflow Optimization and AI Business Improvement  
 **Organization:** Azure & Verdant Vistas, LLC  
@@ -89,4 +89,5 @@ Allie, Darren L. **The Allie Scenario Prompting Protocol: A Scenario-Constrained
 
 | Version | Date | Description |
 |---|---|---|
+| 1.1 | 2026-07-29 | Public release update: version increment, naming refresh, and clarity improvements. |
 | 1.0 | 2026 | Initial official S.C.E.N.A.R.I.O. framework file for The Allie Scenario Prompting Protocol. |
