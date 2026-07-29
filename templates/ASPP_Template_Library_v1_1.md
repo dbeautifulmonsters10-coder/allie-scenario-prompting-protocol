@@ -1,6 +1,6 @@
-# ASPP Prompt Template Library v1.0
+# ASPP Prompt Template Library v1.1
 
-**File Name:** `ASPP_Template_Library_v1_0.md`  
+**File Name:** `ASPP_Template_Library_v1_1.md`  
 **Library Name:** ASPP Prompt Template Library  
 **Protocol:** The Allie Scenario Prompting Protocol (ASPP)  
 **Framework:** S.C.E.N.A.R.I.O.  
@@ -8,7 +8,7 @@
 **Creator Title:** Director of AI Workflow Optimization and AI Business Improvement  
 **Organization:** Azure & Verdant Vistas, LLC  
 **DOI:** 10.5281/zenodo.20596641  
-**Version:** 1.0  
+**Version:** 1.1  
 **Recommended License:** Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 ---
@@ -488,7 +488,7 @@ When using this library:
 Recommended repository path:
 
 ```text
-templates/ASPP_Template_Library_v1_0.md
+templates/ASPP_Template_Library_v1_1.md
 ```
 
 ---
@@ -513,4 +513,5 @@ Allie, Darren L. **The Allie Scenario Prompting Protocol: A Scenario-Constrained
 
 | Version | Date | Description |
 |---|---|---|
+| 1.1 | 2026-07-29 | Public release update: version increment, naming refresh, and clarity improvements. |
 | 1.0 | 2026 | Initial ASPP Prompt Template Library for scenario-based decision prompting. |

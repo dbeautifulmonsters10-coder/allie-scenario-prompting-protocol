@@ -22,13 +22,16 @@ Publication Type:
 Preprint / Methodology / Prompt Engineering Framework
 
 Version:
-1.0
+1.1
 
 Publication Year:
 2026
 
 DOI:
 10.5281/zenodo.20596641
+
+Release Date:
+2026-07-29
 
 Recommended Citation:
 Allie, Darren L. (2026). The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-First Method for Prompt Engineering. Azure & Verdant Vistas, LLC. DOI: 10.5281/zenodo.20596641
@@ -75,8 +78,8 @@ authors:
   - family-names: "Allie"
     given-names: "Darren L."
 affiliation: "Azure & Verdant Vistas, LLC"
-version: "1.0"
-date-released: "2026"
+version: "1.1"
+date-released: "2026-07-29"
 doi: "10.5281/zenodo.20596641"
 url: "https://doi.org/10.5281/zenodo.20596641"
 keywords:
@@ -99,7 +102,7 @@ Title: The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-Fi
 Creator: Darren L. Allie
 Affiliation: Azure & Verdant Vistas, LLC
 Publication Date: 2026
-Version: 1.0
+Version: 1.1
 DOI: 10.5281/zenodo.20596641
 Language: English
 License: Creative Commons Attribution 4.0 International (CC BY 4.0)
