@@ -1,0 +1,145 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/dbeautifulmonsters10-coder/allie-scenario-prompting-protocol/releases/v1.1/schemas/ASPP_Benchmark_v1_1.json",
+  "title": "ASPP Benchmark Record",
+  "description": "Schema for recording the results of an ASPP benchmark evaluation. Protocol: The Allie Scenario Prompting Protocol (ASPP) v1.1. Creator: Darren L. Allie, Azure & Verdant Vistas, LLC. DOI: 10.5281/zenodo.20596641.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "test_case_id",
+    "evaluator",
+    "evaluation_date",
+    "scores",
+    "total_score",
+    "performance_level"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Version of this schema.",
+      "const": "1.1",
+      "examples": ["1.1"]
+    },
+    "test_case_id": {
+      "type": "string",
+      "description": "Identifier of the ASPP test case used for this evaluation.",
+      "examples": ["ASPP-SCENARIO-001"]
+    },
+    "test_case_title": {
+      "type": "string",
+      "description": "Human-readable title of the test case.",
+      "examples": ["Structured Decision Optimization Evaluation"]
+    },
+    "model_evaluated": {
+      "type": "string",
+      "description": "Name or identifier of the AI model evaluated.",
+      "examples": ["GPT-4o", "Claude 3.5 Sonnet", "Gemini 1.5 Pro"]
+    },
+    "model_version": {
+      "type": "string",
+      "description": "Version or snapshot identifier of the model evaluated.",
+      "examples": ["2024-11-20", "2025-02"]
+    },
+    "evaluator": {
+      "type": "string",
+      "description": "Name or identifier of the person or system that scored this response."
+    },
+    "evaluation_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the evaluation was conducted (YYYY-MM-DD).",
+      "examples": ["2026-01-15"]
+    },
+    "response_text": {
+      "type": "string",
+      "description": "The full text of the AI response that was evaluated."
+    },
+    "scores": {
+      "type": "object",
+      "description": "Points awarded for each S.C.E.N.A.R.I.O. stage.",
+      "required": ["S", "C", "E", "N", "A", "R", "I", "O"],
+      "properties": {
+        "S": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10,
+          "description": "S — State the Desired Outcome (max 10 points)"
+        },
+        "C": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10,
+          "description": "C — Clarify the Scenario Context (max 10 points)"
+        },
+        "E": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15,
+          "description": "E — Examine Constraints and Risks (max 15 points)"
+        },
+        "N": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15,
+          "description": "N — Narrow the Decision Space (max 15 points)"
+        },
+        "A": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20,
+          "description": "A — Analyze with Logic, Reasoning, Coding, or Calculation (max 20 points)"
+        },
+        "R": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10,
+          "description": "R — Recommend the Best Single Output (max 10 points)"
+        },
+        "I": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5,
+          "description": "I — Indicate Additional Outcomes Only When Necessary (max 5 points)"
+        },
+        "O": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15,
+          "description": "O — Output an Executable Action Plan (max 15 points)"
+        }
+      },
+      "additionalProperties": false
+    },
+    "total_score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Sum of all stage scores. Maximum is 100."
+    },
+    "performance_level": {
+      "type": "string",
+      "description": "Performance level derived from total score.",
+      "enum": [
+        "Exceptional ASPP Compliance",
+        "Strong ASPP Compliance",
+        "Moderate ASPP Compliance",
+        "Weak ASPP Compliance",
+        "Non-Compliant"
+      ]
+    },
+    "automatic_failure": {
+      "type": "boolean",
+      "description": "True if an automatic failure condition was triggered.",
+      "default": false
+    },
+    "automatic_failure_reason": {
+      "type": "string",
+      "description": "Description of the automatic failure condition, if triggered."
+    },
+    "evaluator_notes": {
+      "type": "string",
+      "description": "Optional notes from the evaluator."
+    }
+  },
+  "additionalProperties": false
+}
