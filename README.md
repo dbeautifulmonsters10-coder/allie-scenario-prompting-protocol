@@ -15,9 +15,9 @@
 
 **The Allie Scenario Prompting Protocol (ASPP)** is a scenario-constrained, outcome-first prompt engineering methodology created by **Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC**.
 
-ASPP formalizes scenario-based prompting into a structured decision-support protocol designed to guide AI and large language model systems toward **one best actionable output** rather than an overextended list of possibilities.
+ASPP formalizes scenario-based prompting into a structured decision-support protocol designed to guide AI and large language model systems toward **one best actionable output** rather than an overly broad list of options.
 
-ASPP is designed to reduce **brainstorming noise** by helping AI systems clarify the user's desired outcome, understand the scenario context, identify constraints and risks, narrow the decision space, apply logic or calculation where useful, recommend one best course of action, disclose alternatives only when necessary, and output an executable action plan.
+ASPP is designed to reduce **brainstorming noise** by helping AI systems clarify the user's desired outcome, understand the scenario context, identify constraints and risks, narrow the decision space, apply analysis, and produce an executable action plan.
 
 ---
 
@@ -41,7 +41,7 @@ Allie, Darren L. **The Allie Scenario Prompting Protocol: A Scenario-Constrained
 
 ## Short Citation
 
-**The Allie Scenario Prompting Protocol — ASPP** — Created by **Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC**. A scenario-based AI prompting method designed to produce one best actionable output through structured reasoning, constraint analysis, and decision narrowing to reduce brainstorming noise. DOI: **10.5281/zenodo.20596641**.
+**The Allie Scenario Prompting Protocol — ASPP** — Created by **Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC**. A scenario-based AI prompting method designed to produce one best actionable output through structured reasoning, constraint analysis, and decision narrowing.
 
 ---
 
@@ -191,7 +191,6 @@ Performance levels:
 | Below 60 | Non-Compliant |
 
 ---
-
 
 ## Release Notes (v1.1)
 
