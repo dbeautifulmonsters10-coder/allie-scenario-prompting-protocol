@@ -1,4 +1,4 @@
-name: Create v1.1.0 Release
+name: Create v1.2.0 Release
 
 on:
   workflow_dispatch:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Create v1.1.0 Release
+      - name: Create v1.2.0 Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -26,29 +26,29 @@ jobs:
 
           ---
 
-          ## What's New in v1.1
+          ## What's New in v1.2
 
           - **Enhanced protocol specification language** for clarity and consistency.
-          - **Updated S.C.E.N.A.R.I.O. framework** with v1.1 naming and metadata across all documents.
-          - **Updated template library and benchmark/rubric files** to v1.1 naming and metadata.
-          - **Renamed preprint manuscript source files** to v1.1 (`.tex` and `.docx`) and updated version text.
-          - **Refreshed citation and abstract metadata** for the v1.1 public release.
+          - **Updated S.C.E.N.A.R.I.O. framework** with v1.2 naming and metadata across all documents.
+          - **Updated template library and benchmark/rubric files** to v1.2 naming and metadata.
+          - **Renamed preprint manuscript source files** to v1.2 (`.tex` and `.docx`) with refreshed package artifacts.
+          - **Refreshed citation and abstract metadata** for the v1.2 public release and Zenodo checklist alignment.
 
           ---
 
           ## Package Contents
 
-          This release includes the following v1.1 artifacts:
+          This release includes the following v1.2 artifacts:
 
           ```
-          release/ASPP_Preprint_v1_1.tex
-          release/ASPP_Preprint_v1_1.docx
-          release/ASPP_Preprint_Zenodo_Ready_v1_1_DOI.pdf
-          docs/ASPP_Specification_v1_1.md
-          docs/ASPP_SCENARIO_Framework_v1_1.md
-          templates/ASPP_Template_Library_v1_1.md
-          benchmarks/ASPP_Bench_Evaluation_Dataset_v1_1.md
-          benchmarks/ASPP_Evaluation_Rubric_v1_1.md
+          release/ASPP_Preprint_v1_2.tex
+          release/ASPP_Preprint_v1_2.docx
+          release/ASPP_Preprint_Zenodo_Ready_v1_2_DOI.pdf
+          docs/ASPP_Specification_v1_2.md
+          docs/ASPP_SCENARIO_Framework_v1_2.md
+          templates/ASPP_Template_Library_v1_2.md
+          benchmarks/ASPP_Bench_Evaluation_Dataset_v1_2.md
+          benchmarks/ASPP_Evaluation_Rubric_v1_2.md
           release/ASPP_Citation_Metadata.txt
           release/ASPP_Abstract_and_Metadata.txt
           release/references.bib
@@ -72,17 +72,18 @@ jobs:
 
           | Version | Description |
           |---|---|
-          | **v1.1.0** | Public release update — updated protocol/specification language, v1.1 S.C.E.N.A.R.I.O. framework, benchmark/rubric refresh, manuscript filename/version updates, refreshed citation and abstract metadata. |
+          | **v1.2.0** | Public release update — updated protocol/specification language, v1.2 S.C.E.N.A.R.I.O. framework, benchmark/rubric refresh, manuscript package refresh, and metadata/checklist alignment. |
+          | v1.1.0 | Prior public release update — preserved, unchanged. |
           | v1.0.0 | Initial Public Release — preserved, unchanged. |
 
           > **Note:** The prior release `v1.0.0` (*ASPP v1.0.0 — Initial Public Release*) remains available and preserved in the [Releases](https://github.com/dbeautifulmonsters10-coder/allie-scenario-prompting-protocol/releases/tag/v1.0.0) page.
 
           ---
 
-          **Full Changelog:** https://github.com/dbeautifulmonsters10-coder/allie-scenario-prompting-protocol/commits/v1.1.0
+          **Full Changelog:** https://github.com/dbeautifulmonsters10-coder/allie-scenario-prompting-protocol/commits/v1.2.0
           RELEASE_NOTES
 
-          gh release create v1.1.0 \
-            --title "ASPP v1.1.0 — Public Release Update" \
+          gh release create v1.2.0 \
+            --title "ASPP v1.2.0 — Public Release Update" \
             --notes-file /tmp/release-notes.md \
             --target main

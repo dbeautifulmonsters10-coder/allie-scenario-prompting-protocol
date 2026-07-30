@@ -1,6 +1,6 @@
 # ASPP Zenodo Upload Checklist
 
-Package: ASPP_Full_Zenodo_Package_v1_0
+Package: ASPP_Full_Zenodo_Package_v1_2
 Protocol: The Allie Scenario Prompting Protocol (ASPP)
 Creator: Darren L. Allie
 Creator Title: Director of AI Workflow Optimization and AI Business Improvement
@@ -20,7 +20,7 @@ Affiliation: Azure & Verdant Vistas, LLC
 
 Publication Date: 2026
 
-Version: 1.0
+Version: 1.2
 
 Language: English
 
@@ -32,19 +32,20 @@ DOI: 10.5281/zenodo.20596641
 
 ## Files Included
 
-- ASPP_Preprint_Zenodo_Ready_v1_0_DOI.pdf
-- ASPP_Preprint_v1_0.docx
-- ASPP_Specification_v1_0.md
-- ASPP_SCENARIO_Framework_v1_0.md
-- ASPP_Bench_Evaluation_Dataset_v1_0.md
-- ASPP_Evaluation_Rubric_v1_0.md
-- ASPP_Citation_Metadata.txt
-- ASPP_Abstract_and_Metadata.txt
+- release/ASPP_Preprint_Zenodo_Ready_v1_2_DOI.pdf
+- release/ASPP_Preprint_v1_2.docx
+- release/ASPP_Preprint_v1_2.tex
+- docs/ASPP_Specification_v1_2.md
+- docs/ASPP_SCENARIO_Framework_v1_2.md
+- templates/ASPP_Template_Library_v1_2.md
+- benchmarks/ASPP_Bench_Evaluation_Dataset_v1_2.md
+- benchmarks/ASPP_Evaluation_Rubric_v1_2.md
+- release/ASPP_Citation_Metadata.txt
+- release/ASPP_Abstract_and_Metadata.txt
+- release/references.bib
+- assets/figures.zip
 - LICENSE_CC_BY_4_0.txt
 - README.md
-- ASPP_Preprint_v1_0.tex
-- references.bib
-- figures.zip
 
 ## Missing Files
 

@@ -25,7 +25,7 @@ Publication Type:
 Preprint / Prompt Engineering Methodology / AI Evaluation Framework
 
 Version:
-1.1
+1.2
 
 Publication Year:
 2026
@@ -104,15 +104,16 @@ Benchmark Purpose:
 To evaluate whether an AI system correctly implements The Allie Scenario Prompting Protocol through complete execution of the S.C.E.N.A.R.I.O. framework, one-best-output discipline, anti-fabrication compliance, and executable action planning.
 
 Recommended Files for Zenodo Upload Package:
-ASPP_Preprint_Zenodo_Ready_v1_1_DOI.pdf
-ASPP_Preprint_v1_1.docx
-docs/ASPP_Specification_v1_1.md
-docs/ASPP_SCENARIO_Framework_v1_1.md
-templates/ASPP_Template_Library_v1_1.md
-benchmarks/ASPP_Bench_Evaluation_Dataset_v1_1.md
-benchmarks/ASPP_Evaluation_Rubric_v1_1.md
-ASPP_Citation_Metadata.txt
-ASPP_Abstract_and_Metadata.txt
+release/ASPP_Preprint_Zenodo_Ready_v1_2_DOI.pdf
+release/ASPP_Preprint_v1_2.docx
+release/ASPP_Preprint_v1_2.tex
+docs/ASPP_Specification_v1_2.md
+docs/ASPP_SCENARIO_Framework_v1_2.md
+templates/ASPP_Template_Library_v1_2.md
+benchmarks/ASPP_Bench_Evaluation_Dataset_v1_2.md
+benchmarks/ASPP_Evaluation_Rubric_v1_2.md
+release/ASPP_Citation_Metadata.txt
+release/ASPP_Abstract_and_Metadata.txt
 LICENSE_CC_BY_4_0.txt
 README.md
 
@@ -121,8 +122,8 @@ Title: The Allie Scenario Prompting Protocol: A Scenario-Constrained, Outcome-Fi
 Creator: Darren L. Allie
 Affiliation: Azure & Verdant Vistas, LLC
 Publication Year: 2026
-Version: 1.1
-Release Date: 2026-07-29
+Version: 1.2
+Release Date: 2026-07-30
 DOI: 10.5281/zenodo.20596641
 Resource Type: Publication / Preprint
 Language: English
@@ -137,5 +138,6 @@ License Statement:
 This work is recommended for release under Creative Commons Attribution 4.0 International (CC BY 4.0), allowing reuse, sharing, and adaptation with appropriate attribution to Darren L. Allie and citation of DOI: 10.5281/zenodo.20596641.
 
 Version History:
+Version 1.2 — Public release update with refreshed documentation versions, manuscript package files, and metadata/checklist alignment.
 Version 1.1 — Public release update with refreshed documentation versions, manuscript filenames, and metadata details.
 Version 1.0 — Initial abstract and metadata file for The Allie Scenario Prompting Protocol (ASPP), prepared for Zenodo upload package use.
