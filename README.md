@@ -11,17 +11,15 @@
 
 ---
 
-## Current Project Status: Revision and Validation Work Underway
-
----
-
 ## Overview
 
 **The Allie Scenario Prompting Protocol (ASPP)** is a scenario-constrained, outcome-first prompt engineering methodology created by **Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC**.
 
-ASPP formalizes scenario-based prompting into a structured decision-support protocol designed to guide AI and large language model systems toward **one best actionable output** rather than an overly broad list of undifferentiated possibilities.
+> **Project update:** See **[ASPP Documentation and Validation Update](#aspp-documentation-and-validation-update)** for the current revision and validation status.
 
-ASPP is designed to reduce **brainstorming noise** by helping AI systems clarify the user's desired outcome, understand the scenario context, identify constraints and risks, narrow the decision space, and deliver one best actionable recommendation with an executable next-step plan.
+ASPP formalizes scenario-based prompting into a structured decision-support protocol designed to guide AI and large language model systems toward **one best actionable output** rather than an overly broad set of unranked suggestions.
+
+ASPP is designed to reduce **brainstorming noise** by helping AI systems clarify the user's desired outcome, understand the scenario context, identify constraints and risks, narrow the decision space, and produce an executable recommendation.
 
 ---
 
@@ -45,7 +43,7 @@ Allie, Darren L. **The Allie Scenario Prompting Protocol: A Scenario-Constrained
 
 ## Short Citation
 
-**The Allie Scenario Prompting Protocol — ASPP** — Created by **Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC**. A scenario-based approach to prompt engineering that emphasizes decision clarity, constraint analysis, and actionable recommendations.
+**The Allie Scenario Prompting Protocol — ASPP** — Created by **Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC**. A scenario-based AI prompting method focused on one best actionable output. DOI: **10.5281/zenodo.20596641**.
 
 ---
 
@@ -298,17 +296,35 @@ The Allie Scenario Prompting Protocol (ASPP), the S.C.E.N.A.R.I.O. Framework, AS
 | Version | Date | Description |
 |---|---|---|
 | 1.1 | 2026-07-29 | Public release update with v1.1 documentation, benchmark/template refresh, and manuscript filename/version updates. |
-| 1.0 | 2026 | Initial README for The Allie Scenario Prompting Protocol repository and Zenodo package. |
+| 1.0.0 | 2026 | Initial README for The Allie Scenario Prompting Protocol repository and Zenodo package. |
 
 ---
 
-## Status
+## Current Project Status: Revision and Validation Work Underway
 
-This package is prepared for:
+## ASPP Documentation and Validation Update
 
-- Zenodo archive upload.
-- GitHub repository publication.
-- Prompt template library development.
-- Benchmark evaluation use.
-- Community review and adoption.
-- Future ASPP versioning and validation.
+Work is currently underway to revise and strengthen **The Allie Scenario Prompting Protocol (ASPP)** and its supporting materials.
+
+The purpose of this revision phase is to ensure that ASPP is presented with the appropriate level of professional rigor, research alignment, and documentation discipline. This includes correcting gaps, improving clarity, refining terminology, and making sure that ASPP’s public materials accurately reflect the current state of the methodology.
+
+The following areas are being reviewed and improved:
+
+* The ASPP preprint
+* The ASPP Official Benchmark Evaluation Suite
+* ASPP-Bench materials
+* Evaluation rubric and scoring guidance
+* Calibration examples
+* GitHub release documentation
+* Zenodo archive metadata
+* Hugging Face presentation materials
+* Medium and Substack publication language
+
+A key part of this work is making sure that ASPP does not overstate its current evidentiary status. ASPP will be described as a proposed and developing methodology until expanded testing, baseline comparisons, multi-model evaluation, and scoring results are completed.
+
+The objective is to move ASPP forward responsibly by strengthening the framework, increasing transparency, and building the type of evidence expected from serious prompt-engineering and AI-evaluation work.
+
+This revision effort reflects a commitment to professional improvement, not promotional overreach. ASPP is being refined so that it can stand as a credible, testable, and clearly documented approach to structured AI decision-making.
+
+— Darren L. Allie
+Creator, The Allie Scenario Prompting Protocol (ASPP)
