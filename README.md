@@ -11,13 +11,17 @@
 
 ---
 
+## Current Project Status: Revision and Validation Work Underway
+
+---
+
 ## Overview
 
 **The Allie Scenario Prompting Protocol (ASPP)** is a scenario-constrained, outcome-first prompt engineering methodology created by **Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC**.
 
-ASPP formalizes scenario-based prompting into a structured decision-support protocol designed to guide AI and large language model systems toward **one best actionable output** rather than an overly broad list of options.
+ASPP formalizes scenario-based prompting into a structured decision-support protocol designed to guide AI and large language model systems toward **one best actionable output** rather than an overly broad list of undifferentiated possibilities.
 
-ASPP is designed to reduce **brainstorming noise** by helping AI systems clarify the user's desired outcome, understand the scenario context, identify constraints and risks, narrow the decision space, apply analysis, and produce an executable action plan.
+ASPP is designed to reduce **brainstorming noise** by helping AI systems clarify the user's desired outcome, understand the scenario context, identify constraints and risks, narrow the decision space, and deliver one best actionable recommendation with an executable next-step plan.
 
 ---
 
@@ -41,7 +45,7 @@ Allie, Darren L. **The Allie Scenario Prompting Protocol: A Scenario-Constrained
 
 ## Short Citation
 
-**The Allie Scenario Prompting Protocol — ASPP** — Created by **Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC**. A scenario-based AI prompting method designed to produce one best actionable output through structured reasoning, constraint analysis, and decision narrowing.
+**The Allie Scenario Prompting Protocol — ASPP** — Created by **Darren L. Allie, Director of AI Workflow Optimization and AI Business Improvement, Azure & Verdant Vistas, LLC**. A scenario-based approach to prompt engineering that emphasizes decision clarity, constraint analysis, and actionable recommendations.
 
 ---
 
