@@ -148,7 +148,7 @@ Return one best actionable recommendation unless more than one outcome is materi
 
 ## ASPP-Bench
 
-**ASPP-Bench** is the benchmark-style evaluation dataset for testing whether an AI system correctly applies The Allie Scenario Prompting Protocol.
+**ASPP-Bench** is the pilot evaluation set designed to test whether an AI system correctly applies The Allie Scenario Prompting Protocol.
 
 Primary benchmark:
 

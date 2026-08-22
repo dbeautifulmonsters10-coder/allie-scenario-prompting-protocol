@@ -198,7 +198,7 @@ Organizations can use ASPP as an internal AI-use control for business, operation
 
 | Framework | ASPP Contribution | Evidence Type |
 |---|---|---|
-| NIST AI RMF 1.0 | Supports Govern, Map, Measure, and Manage at the prompt-interaction level. | Scenario templates, rubric, benchmark dataset, action plans. |
+| NIST AI RMF 1.0 | Supports Govern, Map, Measure, and Manage at the prompt-interaction level. | Scenario templates, rubric, pilot evaluation set, action plans. |
 | NIST GenAI Profile | Adds anti-fabrication, context framing, missing-fact review, and human oversight controls. | Template controls and output restrictions. |
 | ISO/IEC 42001:2023 | Supports AI management-system practices through documented prompt governance. | Templates, versioning, review records, training materials. |
 | OWASP LLM Top 10 | Adds security-aware constraints for prompt injection, excessive agency, overreliance, and sensitive-data risk. | Security clauses, human review requirements, policy limits. |
